@@ -1,2 +1,2 @@
 # WhiteGraphics
-A simple website made using Bootstrap
+A simple and stunning  website made using Bootstrap
