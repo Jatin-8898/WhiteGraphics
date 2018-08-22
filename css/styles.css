@@ -1,0 +1,525 @@
+/***************************************************************************
+            Project Name      :     White Graphics
+                        Fonts
+            Deafault font     :     Roboto Condensed
+            Medium Turquoise  :     #34C6D3 (Buttons, Icons, Lines and BG)
+            Steel Grey        :     #41464B (Headings)
+            Blue Bayoux       :     #64707B (Paragraphs)
+            White             :     #FFF (Text with dark bgs)
+            Black             :     #000
+
+****************************************************************************/
+/*************************************************
+            General CSS Section
+*************************************************/
+html,body{
+    height: 100%;
+}
+body{
+    font-family: 'Roboto Condensed',sans-serif;
+    letter-spacing: .05em;
+}
+h3{
+    text-transform: uppercase;
+    color: #41464B;
+    font-weight: 700;
+}
+p{
+    font-size: 16px;
+    color: #64707B;
+    font-weight: 300;
+}
+/*************************************************
+            Button CSS generic
+*************************************************/
+.btn-general{
+    border: solid 2px #fff;
+    border-radius: 0;
+    padding: 12px 26px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.btn-white{
+    border-color: #fff;
+    color: #fff;
+}
+.btn-white:hover,
+.btn-white:focus{
+    background-color: #fff;
+    color: #41464B;    
+}
+.btn-blue{
+    border-color: #34C6D3;
+    color: #34C6D3;
+}
+.btn-blue:hover,
+.btn-blue:focus{
+    background-color: #34C6D3;
+    color: #fff;
+}
+/*************************************************
+            Parallax CSS generic
+*************************************************/
+.bg-parallax{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*************************************************
+            Home section CSS
+*************************************************/
+#home{
+    height: 100%;
+}
+.home-cover{
+    background-image: url("../img/bg-home.jpg");
+    height: 100%;
+}
+.home-content-box{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.home-content-box-inner{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.home-cover h2{
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+/*************************************************
+            Home section Animation
+*************************************************/
+.home-cover, 
+.home-heading,
+.home-btn{
+    animation-duration: .5s    
+}
+.home-cover{
+    animation-delay: .1s;
+}
+.home-heading{
+    animation-delay: .5s;
+}
+.home-btn{
+    animation-delay: 1s;    
+}
+/*************************************************
+            Content Box section 
+*************************************************/
+.content-box{
+    padding: 60px 0;
+}
+.content-title h3{
+    font-size: 30px;
+    font-weight: 700px;
+    text-align: center;
+    margin: 0 0 30px;
+}
+.content-title-white{
+    color: #fff;
+}
+.content-title-underline{
+    width: 30px;
+    height: 3px;
+    margin: 0 auto 30px;
+    background: #34C6D3;
+}
+/*************************************************
+            Services section css 
+*************************************************/
+.service-item{
+    margin: 0 0 20px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.service-item-icon i{
+    float: left;
+    color: #34C6D3;
+    padding: 15px;
+    margin-right: 25px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+.service-item:hover .service-item-icon i{
+    color: #fff;
+    background: #34C6D3;
+}
+.service-item-title h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+.service-item-desc p{
+    margin: 0;
+    padding-left: 100px;
+}
+/*************************************************
+            About CSS Section
+*************************************************/
+#about .content-box{
+    float: left;
+    height: 700px;
+}
+.content-box-outer{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.content-box-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+.about-desc{
+    margin-bottom: 30px;
+}
+.about-btn{
+    text-align: center;
+}
+.about-bg-diagonal{
+    width: 60%;
+    float: right;
+    height: 700px;
+    background-image: url('../img/bg-about.jpg');
+    border-left: solid 200px #fff;
+    border-top: solid 700px transparent;
+}
+/*************************************************
+            Work CSS Section
+*************************************************/
+.row.no-gutters [class*=col-]{
+    padding-left: 0;
+    padding-right: 0;
+}
+.img-wrapper{
+    overflow: hidden;
+}
+.img-wrapper img{
+    transition: transform .5s ease;
+}
+.img-wrapper img:hover{
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+/*************************************************
+            Team CSS Section
+*************************************************/
+.team-member{
+    margin: 0 15px;
+}
+.team-member-info{
+    padding: 10px 0 30px 0;
+    text-align: center;
+}
+h4.team-member-name{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+h4.team-member-designation{
+    color: #34C6D3;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    font-weight: 700;
+}
+/*************************************************
+            Social Icon Design
+*************************************************/
+.social-list{
+    padding-left: 0;
+}
+.social-list li{
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+}
+.social-icone i{
+    font-size: 16px;
+}
+.icon-white{
+    color: #fff;
+}
+.icon-gray{
+    color: #64707B;
+}
+.icon-white:hover,
+.icon-gray:hover{
+    color: #34C6D3;
+}
+/*************************************************
+            Testimonial CSS
+*************************************************/
+.testimonial-cover{
+    background-image: url('../img/bg-testimonials.jpg');
+}
+.customers-testimonials{
+    padding: 50px 0;
+}
+.testimonial img{
+    max-width: 120px;
+    margin: 0 auto;
+}
+.testimonial blockquote{
+    border: 0;
+    font-family: Georgia, Times, serif;
+    font-style: italic;
+    padding: 10px 150px;
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+}
+.testimonial p{
+    color: #fff;
+}
+.testimonial blockquote p{
+    margin: 10px auto;
+}
+.testimonial blockquote:before,
+.testimonial blockquote:after{
+    font-size: 80px;
+    font-style: normal;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+.testimonial blockquote:before{
+    content: "\201C";
+    top: 0;
+    left: 100px;
+}
+.testimonial blockquote:after{
+    content: "\201D";
+    bottom: 0;
+    right: 100px;
+}
+.testimonial-author p strong{
+    display: block;
+}
+/*************************************************
+            Pricing Section CSS
+*************************************************/
+.pricing-box{
+    padding: 50px 0;
+    border: solid 3px #34C6D3;
+    text-align: center;
+    margin: 30px 0;
+}
+h4.pricing-title{
+    background-color: #34C6D3;
+    display: inline-block;
+    color: #fff;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+h3.pricing-value{
+    font-size: 60px;
+    font-weight: 700;
+}
+h3.pricing-value sup{
+    font-size: 28px;
+    vertical-align: super;
+    font-weight: 300;
+}
+ul.pricing-spec{
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 60px;
+}
+ul.pricing-spec li p{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.pricing-box-lg{
+    padding: 80px 0;
+    margin: 0;
+    background: #34C6D3;
+}
+.pricing-box-lg h4.pricing-title{
+    background-color: #fff;
+    color: #34C6D3;
+}
+.pricing-box-lg .pricing-spec li p{
+    color: #fff;
+}
+/*************************************************
+            Stats Section CSS 
+*************************************************/
+.stats-cover{
+    background-image: url('../img/bg-stats.jpg');
+}
+.stats-cover .content-box{
+    background-color: rgba(0,0,0,0.7);
+}
+.stats-item{
+    padding: 100px 0;
+}
+.stats-item i{
+    color: #34C6D3;
+}
+.stats-item h2{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+.stats-item p{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0;
+}
+/*************************************************
+            Clients Section CSS 
+*************************************************/
+.client{
+    padding: 40px 0;
+}
+/*************************************************
+            Footer Section CSS 
+*************************************************/
+footer{
+    background-color: #41464B;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0,0,0,0.1);
+}
+.contact-left h3,
+.contact-right h3{
+    font-size: 26px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.contact-left p{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.contact-info{
+    background: url('../img/world-map.png') no-repeat;
+    background-size: contain;
+}
+address strong{
+    color: #fff;
+    font-size: 16px;
+}
+footer{
+    letter-spacing: 1px;
+}
+
+form .form-control{
+    background: transparent;
+    border-radius: 0;
+    border-color: #fff;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    font-weight: 300;
+}
+
+.footer-bottom{
+    background: rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+.footer-copyrights p{
+    color: #fff;
+}
+.footer-menu{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+}
+.footer-menu ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.footer-menu ul li{
+    display: inline-block;
+}
+.footer-menu a{
+    color: #fff;
+    padding-right: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 300;
+}
+.footer-menu a:hover{
+    color: #34C6D3;
+}
+.btn-back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    padding: 5px 15px;
+    display: none;
+}
+/*************************************************
+            Navbar Section CSS 
+*************************************************/
+.navbar{
+    padding: 10px 0;
+    transition: all 0.5s ease-in-out;
+    border: none;
+}
+.wg-top-nav{
+    background-color: rgba(0,0,0,0.7);
+}
+.wg-nav-wrapper{
+    padding: 0 50px;
+}
+.navbar-brand{
+    color: #FFF;
+    font-size: 26px;
+}
+.navbar-brand:hover{
+    color: #FFF;
+}
+#wg-menu{
+    float: right;
+}
+.navbar-nav>li>a{
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.navbar-nav>li>a:focus,
+.navbar-nav>li>a:hover{
+    background: none;
+    color: #34C6D3;
+}
+.navbar-toggle{
+    background-color: rgba(0,0,0,0.7);
+    border: solid 1px #FFF;
+    border-radius: 0;
+}
+.navbar-toggle .icon-bar{
+    background-color: #FFF;
+}
+.navbar-collapse{
+    max-height: none!important;
+}
+.navbar ul.navbar-nav>li.active>a{
+    color: #34C6D3;
+}
